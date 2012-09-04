@@ -13,7 +13,7 @@ Usage
 
 Example
 =======
-#include"mtrace_gc.h"
+include"mtrace_gc.h"
 
 int main() {
    char *ptr1;
