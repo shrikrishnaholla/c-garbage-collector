@@ -30,3 +30,7 @@ Behind the scenes
 =================
 What this library actually does is that it uses mtrace's functionalities.
 mtrace is a part of mcheck standard library in C. When a call to mtrace() is made, it begins logging the memory allocations and deallocations in a file specified in the MALLOC_TRACE bash variable. It stops logging when a call to muntrace() is made. So what is done here is that when gc() is called, it reads the file into which mtrace has written, and reads the address of the unfreed memory block, and frees it!!
+
+Credits
+=======
+Sathyam, my friend who helped me remember a lot of things I had forgotten in C, and learn few new things too! :)
